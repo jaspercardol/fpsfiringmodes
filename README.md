@@ -21,8 +21,7 @@ It currently adds three firing modes:
 # Why would I want to use this?
 There are a variety of reasons why you could use this script.
 - The game you are trying to play does not support different weapon firing modes.
-- The way the game implements the modes is not to your liking
-- You have to pay to enable a feature like this and you would rather have it another way
+- You would like to adjust the handling to your preferences
 
 # How does it work?
 This script simulates mouse clicks to fire bullets in a certain pattern or speed. For example:
