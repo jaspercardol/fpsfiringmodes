@@ -34,5 +34,5 @@ This script simulates mouse clicks to fire bullets in a certain pattern or speed
 This script should work on any game but can be tweaked per game for better results. Ideally, I'd like to implement a way to configure presets for different games to improve compatibility.
 
 # Online usage
-Please carefully research whether a script like this is allowed to be used in the game you are trying to use it on. In online games, it can provide an unfair advantage to your opponents or may get you banned from the online service. We are not responsible for how you use the script, so please proceed with caution.
+Please carefully research whether a script like this is allowed to be used in the game you are trying to use it on. In online games, it can provide an unfair advantage to your opponents or may get you banned from the online service. I am not responsible for how you use the script, so please proceed with caution.
 
