@@ -6,8 +6,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Global settings
 mode = 1 ; 1 = off, 2 = burst, 3 = automatic
-button_hold_delay = 20
-delay_between_shots = 90
+button_hold_delay = 10
+delay_between_shots = 50
 
 ; Notification settings
 notify = true
@@ -56,7 +56,11 @@ Switch mode
 			Send {LButton down}
 			Sleep button_hold_delay
 			Send {LButton up}
+			if(delay_between_shots != "false") {
 			Sleep (delay_between_shots - button_hold_delay)
+			} else {
+			Sleep button_hold_delay
+			}
 		}
 		return
 	case 4:
