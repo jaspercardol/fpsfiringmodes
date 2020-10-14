@@ -33,6 +33,13 @@ This script simulates mouse clicks to fire bullets in a certain pattern or speed
 # Compatibility
 This script should work on any game but can be tweaked per game for better results. Ideally, I'd like to implement a way to configure presets for different games to improve compatibility.
 
+Currently tested games:
+- Call of Duty Modern Warfare 3
+- Call of Duty Black Ops II
+- Star Wars Battlefront II (Classic, 2005)
+
+If you've test a game and got it to work, feel free to reach out so I can include in the list.
+
 # Online usage
 Please carefully research whether a script like this is allowed to be used in the game you are trying to use it on. In online games, it can provide an unfair advantage to your opponents or may get you banned from the online service. I am not responsible for how you use the script, so please proceed with caution.
 
