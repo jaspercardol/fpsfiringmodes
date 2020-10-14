@@ -38,7 +38,7 @@ Currently tested games:
 - Call of Duty Black Ops II
 - Star Wars Battlefront II (Classic, 2005)
 
-If you've tested a game and got it to work, feel free to reach out so I can include in the list.
+If you've tested a game and got it to work, feel free to reach out so I can include it in the list.
 
 # Online usage
 Please carefully research whether a script like this is allowed to be used in the game you are trying to use it on. In online games, it can provide an unfair advantage to your opponents or may get you banned from the online service. I am not responsible for how you use the script, so please proceed with caution.
