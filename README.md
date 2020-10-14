@@ -3,10 +3,11 @@
 # What is this project?
 This project aims to add different weapon firing modes natively to shooter games.
 
-It currently adds three firing modes:
-- Burst fire (fire x amount of bullets in a row)
-- Rapid fire (fire anything as fast as possible.)
-- Single shot (makes automatic guns shoot single shots)
+It currently has four modes:
+- Off (off, indicated by long low beep)
+- Burst fire (fire x amount of bullets in a row, indicated by one beep)
+- Rapid fire (fire anything as fast as possible, indicated by two beeps)
+- Single shot (makes automatic guns shoot single shots, indicated by three beeps)
 
 # Installation
 1. Download and install AutoHotKey from https://www.autohotkey.com/
