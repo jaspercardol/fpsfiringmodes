@@ -11,17 +11,23 @@ delay_between_shots = 50
 
 ; Notification settings
 notify = true
-notify_traytip = true
-notify_splashtext = true
+notify_traytip = false
+notify_splashtext = false
 notify_sound = true
 
 ; Burst Fire settings
 burst_size = 3 ; Number of bullets you want to fire when clicking once.
 
-
+*NumpadEnter:: ; Rondje van de zaak
+Send {LButton down}
+Loop 150 {
+MouseMove, 80, 0, 100, R
+Sleep 5
+}
+Send {LButton up}
+return
 
 *XButton2:: ; Switch modes.
-traytip_desc = false
 Switch mode
 {
 	case 1:
@@ -33,7 +39,7 @@ Switch mode
 	case 4:
 		mode = 1
 }
-if(notify = "true") {
+if(notify) {
 	NotifyOnModeSwitch(mode)
 }
 return
@@ -70,7 +76,6 @@ Switch mode
 		return
 }
 
-; Copy this function into your script to use it.
 HideTrayTip() {
     TrayTip  ; Attempt to hide it the normal way.
     if SubStr(A_OSVersion,1,3) = "10." {
@@ -82,32 +87,10 @@ HideTrayTip() {
 
 ; Notify User
 NotifyOnModeSwitch(newmode) {
-	title = Weapon Control
-	text = false
-	Switch newmode {
-		case 1:
-			text = Off
-		case 2:
-			text = Burst Fire
-		case 3:
-			text = Rapid Fire
-		case 4:
-			text = Single Shot
-	}
-	if(notify_splashtext) {
-		SoundBeep, 524, 200
-		SplashTextOn, 50,25, %title%, %text%
-		SetTimer % SplashTextOff, 200
-	}
-	if(notify_traytip = "true") {
-		TrayTip, %title%, %text%, 5, 16
-		SetTimer % HideTrayTip, 200
-	}
-	if("true" = "true") {
 		Switch newmode {
 			case 1:
 				SoundBeep, 262, 300
-				
+
 			case 2:
 				SoundBeep, 524, 200
 			case 3:
@@ -122,8 +105,3 @@ NotifyOnModeSwitch(newmode) {
 				SoundBeep, 524, 100
 		}
 	}
-
-
-}
-
-
